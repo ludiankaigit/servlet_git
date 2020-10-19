@@ -20,7 +20,7 @@
 				<a href="/logoutServlet" target="_parent">
 					<img src="../images/admin_exit.gif" border="0" >
 				</a>
-                    11111111111122222223333
+                    111111111111222222233336666666
                 </td>
             </tr>
         </table>
