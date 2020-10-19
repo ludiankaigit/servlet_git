@@ -11,6 +11,7 @@ import java.io.IOException;
 public class LogOutServlet  extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+   System.out.println(2222);
     req.getRequestDispatcher("login.jsp").forward(req,resp);
 
     }
