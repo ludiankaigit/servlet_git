@@ -5,6 +5,7 @@
 <head><title>后台-页眉</title>
 
   <link type="text/css" rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
     <center>
@@ -16,9 +17,10 @@
 				<a href="" onclick="window.parent.location.href=''">
 					<img src="../images/admin_index.gif" border="0">
 					</a>
-				<a href="logoutServlet" target="_parent">
-					<img src="../images/admin_exit.gif" border="0">
+				<a href="/logoutServlet" target="_parent">
+					<img src="../images/admin_exit.gif" border="0" >
 				</a>
+                    111111111111
                 </td>
             </tr>
         </table>
