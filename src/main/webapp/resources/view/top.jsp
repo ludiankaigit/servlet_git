@@ -3,13 +3,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<base href="<%=request.getContextPath()%>/"/>
+
   <meta http-equiv="Content-Type" content="text/html; charset=gbk">
   <title>页眉</title>
-   <link type="text/css" rel="stylesheet" href="css/style.css">
-   <script type="text/javascript">
-  
-</script>
+   <link type="text/css" rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
     <center>
@@ -30,12 +28,12 @@
             </tr>
             <!-- 导航菜单 -->
             <tr height="56">
-                <td align="center" width="220" background="images/logo.gif"></td>
-                <td align="right" background="images/menu.gif">
+                <td align="center" width="220" background="${pageContext.request.contextPath}/resources/images/logo.gif"></td>
+                <td align="right" background="${pageContext.request.contextPath}/resources/images/menu.gif">
                     <table border="0" width="600">
 						<tr align="center">
 							<td width="100">
-								<a href="" onclick="window.parent.location.href='view/indextemp.jsp'" style="color:white">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></font></td>
+								<a href="" onclick="window.parent.location.href=''" style="color:white">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></font></td>
 							
 							<td width="100">
 								<a href="selectInfoServlet?infotypeid=0" style="color:white" target="default">暂时没有信息</a>
@@ -83,7 +81,7 @@
             </tr>
         </table>
         <table border="0" width="100%" height="90" cellspacing="0" cellpadding="0" style="margin-top:1">
-            <tr><td align="center"><img src="images/pcard1.jpg"></td></tr>
+            <tr><td align="center"><img src="${pageContext.request.contextPath}/resources/images/pcard1.jpg"></td></tr>
         </table>
     </center>
 </body>

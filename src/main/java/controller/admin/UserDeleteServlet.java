@@ -1,6 +1,7 @@
 package controller.admin;
 
 import dao.UserDao;
+import pojo.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * 根据id删除用户信息
@@ -23,7 +25,12 @@ public class UserDeleteServlet extends HttpServlet {
        int row= userDao.deleteUserById(id);
        if(row>0){
             //重定向
-           resp.sendRedirect("/userSelectServlet");
+          resp.sendRedirect("/userSelectServlet?currentPage1=1");
+         /*  List<User> list = userDao.getAllUsers();
+           req.setAttribute("list",list);
+           req.getRequestDispatcher("/resources/admin/userlist.jsp").forward(req,resp);*/
+
+
        }else {
            //转发到错误页面
            req.getRequestDispatcher("error.jsp").forward(req,resp);

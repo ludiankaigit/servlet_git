@@ -8,7 +8,7 @@
 <body>
     <center>
         <table border="0" width="100%" cellspacing="0" cellpadding="0" >
-            <tr align="center"><td align="center"><img src="../images/end.jpg"></td></tr>
+            <tr align="center"><td align="center"><img src="${pageContext.request.contextPath}/resources/images/end.jpg"></td></tr>
         </table>        
     </center>
 </body>
