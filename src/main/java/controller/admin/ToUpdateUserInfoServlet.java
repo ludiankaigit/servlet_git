@@ -32,7 +32,7 @@ public class ToUpdateUserInfoServlet extends HttpServlet {
         int row=userDao.updateUserInfoById(user);
         if(row>0){
             //转发
-            req.getRequestDispatcher("/resources/admin/default.jsp").forward(req,resp);
+            req.getRequestDispatcher("/admin/default.jsp").forward(req,resp);
         }else{
             req.getRequestDispatcher("error.jsp").forward(req,resp);
         }

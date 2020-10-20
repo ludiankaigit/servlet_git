@@ -55,8 +55,7 @@ public class UserSelectServlet extends HttpServlet {
             req.setAttribute("currentPage",currentPage);
             //将page绑定到HttpServletRequest  将页数显示到页面
             req.setAttribute("page",page);
-            req.getRequestDispatcher("/resources/admin/userlist.jsp").forward(req,resp);
-
+            req.getRequestDispatcher("/admin/userlist.jsp").forward(req,resp);
 
         } catch (SQLException e) {
             e.printStackTrace();

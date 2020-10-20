@@ -24,7 +24,7 @@ public class SelectUserByIdForUpdateServlet  extends HttpServlet {
         User user=dao.selectUserInfoById(id);
         //将user对象绑定到HttpServletRequest 对象  转发到用户信息修改页面
         req.setAttribute("u",user);
-        req.getRequestDispatcher("/resources/admin/userupdate.jsp").forward(req,resp);
+        req.getRequestDispatcher("/admin/userupdate.jsp").forward(req,resp);
 
 
     }

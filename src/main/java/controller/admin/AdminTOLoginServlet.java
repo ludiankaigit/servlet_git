@@ -34,7 +34,7 @@ public class AdminTOLoginServlet extends HttpServlet {
             session.setAttribute("loginName",username);
            //将session绑定到
             //跳转到主页 转发
-            req.getRequestDispatcher("/resources/admin/AdminTemp.jsp").forward(req,resp);
+            req.getRequestDispatcher("/admin/AdminTemp.jsp").forward(req,resp);
 
         }else{
             //用户名或密码错误  将错误信息显示在登录页面

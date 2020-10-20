@@ -7,7 +7,7 @@
 <head>
 
 <title>后台首页</title></head>
-  <link type="text/css" rel="stylesheet" href="../css/style.css">
+  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 <body>
     <center>
     	<form action="/userUpdateServlet" method="post">

@@ -10,11 +10,11 @@ import java.io.IOException;
 /**
  *点击 网站首页的按钮 跳转到首页
  */
-@WebServlet("/toIndex")
+@WebServlet("/toDefault")
 public class ToIndexServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             System.out.println("请求进来");
-            req.getRequestDispatcher("/resources/view/indextemp.jsp").forward(req,resp);
+            req.getRequestDispatcher("view/default.jsp").forward(req,resp);
     }
 }

@@ -5,7 +5,7 @@
 <head>
 
 <title>后台首页</title></head>
-  <link type="text/css" rel="stylesheet" href="../css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
 <body>
     <center>
     

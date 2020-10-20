@@ -6,10 +6,10 @@
 <head>
 
 <title>后台-侧栏</title>
-  <link type="text/css" rel="stylesheet" href="../css/style.css">
-  <script language="javascript" type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+  <script language="javascript" type="text/javascript" src="${pageContext.request.contextPath}/js/My97DatePicker/WdatePicker.js"></script>
 </head>
-<body background="../images/back.gif" style="background-color:white">
+<body background="${pageContext.request.contextPath}/images/back.gif" style="background-color:white">
     <center>
    
         <table border="0" width="220" height="auto" cellspacing="0" cellpadding="0" style="margin-top:7;background-color:white">
